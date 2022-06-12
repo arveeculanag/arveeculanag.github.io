@@ -37,6 +37,7 @@ header {
   font-size: 2.5rem;
   font-weight: 900;
   line-height: 2.6rem;
+  margin-bottom: 20px;
 }
 
 header span {
@@ -145,20 +146,70 @@ section {
   background-color: var(--clr-yellow);
 }
 .content_links {
+  margin-top: 30px;
   width: inherit;
 }
 .content_link {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   border: 1px solid black;
-  max-width: 350px;
-  min-height: 350px;
+  padding: 20px;
   margin-bottom: 20px;
 }
 
 .content_link img {
   max-width: 50px;
+}
+
+/* Desktop Styles */
+section > div,
+ul {
+  max-width: 880px;
+  margin: auto;
+}
+
+@media screen and (min-width: 600px) {
+  .link {
+    border: none;
+  }
+
+  .home a {
+    padding-right: 50px;
+    padding-left: 0;
+  }
+
+  header {
+    font-size: 3.3rem;
+    text-align: center;
+  }
+
+  .content_highlights {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .circle_label {
+    font-size: 1rem;
+  }
+
+  .content {
+    display: flex;
+  }
+
+  .content_title {
+    min-width: 300px;
+  }
+
+  .content_body {
+    padding: 0;
+  }
+
+  .content--projects,
+  .content--reach-me,
+  .content--thanks {
+    display: block;
+  }
+  .content--projects .content_body
+  .content--reach-me .content_body{
+    max-width: 550px;
+  }
 }
 
