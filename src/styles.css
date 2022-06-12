@@ -1,0 +1,63 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --clr-red: #FF5830;
+  --clr-yellow: #fc3;
+  --clr--txt: #111;
+  --clr-white: #fff;
+}
+
+/* Reset styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  color: var(--clr--txt);
+}
+
+/* Typography */
+li {
+  font-weight: 500;
+}
+
+header {
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 2.6rem;
+}
+
+header span {
+  color: var(--clr-red);
+}
+
+.circle {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.circle--commits {
+  font-size: 0.9rem;
+}
+
+.circle--experience {
+  color: var(--clr-white);
+}
+
+.content_title {
+  font-weight: 700;
+}
+
+.content_title--section {
+  font-size: 1.2rem;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.content_links {
+  width: 50px;
+}
