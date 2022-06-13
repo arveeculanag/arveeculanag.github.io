@@ -10,6 +10,7 @@
   --clr-accent-green: #26DB4E;
 }
 
+/* General and Reset Styles */
 
 * {
   margin: 0;
@@ -25,6 +26,7 @@ p {
 
 li {
   list-style: none;
+  font-weight: 500;
 }
 
 a {
@@ -40,7 +42,7 @@ img {
 }
 
 .content-title {
-  font-weight: 700;
+  font-weight: bold;
 }
 
 .section-description,
@@ -48,10 +50,133 @@ img {
   margin-top: 10px;
 }
 
+.content-body,
+.content-body > p {
+  margin-bottom: 30px;
+}
+
+.content-body--med {
+  font-weight: 500;
+}
+
 .section {
   padding: 50px 20px;
 }
 
+.section-description {
+  margin-bottom: 45px;
+}
+
 .section--nav {
   padding: 0;
+}
+
+/* Styles start here */
+
+.section--nav {
+  background-color: #111;
+}
+
+.nav-items {
+  display: flex;
+  padding: 0 20px;
+}
+
+.nav-item {
+  border-right: 1px solid rgb(70, 70, 70);
+}
+
+.nav-item--home {
+  padding-right: 30px;
+}
+
+.nav-link {
+  padding: 13px 10px;
+  color: var(--clr-txt-white);
+}
+
+.nav-link--home {
+  padding: 13px 0;
+}
+
+
+
+.hero-greeting {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 90%;
+}
+
+.hero-greeting--highlight {
+  color: var(--clr-accent-red);
+}
+
+.content-body--med {
+  margin-top: 30px;
+}
+
+
+
+.disk-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.disk {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--clr-accent-red);
+}
+
+.disk--age {
+  background-color: var(--clr-accent-yellow);
+}
+
+.disk--commits {
+  background-color: var(--clr-accent-green);
+}
+
+.disk::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.disk--experience::before {
+  content: "3";
+  color: var(--clr-txt-white);
+}
+
+.disk--age::before {
+  content: "19";
+}
+
+.disk--commits::before {
+  content: "650";
+  font-size: 1rem;
+}
+
+.disk-label {
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding-left: 20px;
+}
+
+
+
+.section--reach-me {
+  background-color: var(--clr-accent-yellow);
+}
+
+.content-social {
+  border: 1px solid var(--clr-txt-black);
+  padding: 15px;
+  font-weight: 500;
+  margin-bottom: 10px;
 }
