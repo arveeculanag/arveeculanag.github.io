@@ -80,15 +80,23 @@ img {
 
 .nav-items {
   display: flex;
-  padding: 0 20px;
 }
 
 .nav-item {
   border-right: 1px solid rgb(70, 70, 70);
 }
 
-.nav-item--home {
-  padding-right: 30px;
+.nav-link:focus,
+.nav-link:active,
+.nav-link:hover {
+  background-color: var(--clr-accent-red);
+}
+
+.nav-link--home:focus,
+.nav-link--home:active,
+.nav-link--home:hover {
+  background-color: var(--clr-txt-black);
+
 }
 
 .nav-link {
@@ -97,7 +105,7 @@ img {
 }
 
 .nav-link--home {
-  padding: 13px 0;
+  padding: 13px 40px 13px 20px;
 }
 
 
@@ -191,6 +199,17 @@ img {
   
   .nav-item {
     border: none;
+  }
+
+  .nav-link--home {
+    padding: 13px 0;
+    padding-right: 40px;
+  }
+
+  .nav-link--home:focus,
+  .nav-link--home:active,
+  .nav-link--home:hover {
+    text-decoration: underline;
   }
 
   
