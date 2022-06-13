@@ -76,6 +76,8 @@ img {
 
 .section--nav {
   background-color: #111;
+  position: sticky;
+  top: 0;
 }
 
 .nav-items {
