@@ -1,2 +1,57 @@
 /* Import font */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+:root {
+  --clr-txt-black: #111;
+  --clr-txt-white: #FAFAFA;
+  --clr-accent-red: #FF5830;
+  --clr-accent-yellow: #FFCC33;
+  --clr-accent-green: #26DB4E;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  color: var(--clr-txt-black);
+}
+
+p {
+  font-size: 15px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.content-title {
+  font-weight: 700;
+}
+
+.section-description,
+.content-body {
+  margin-top: 10px;
+}
+
+.section {
+  padding: 50px 20px;
+}
+
+.section--nav {
+  padding: 0;
+}
