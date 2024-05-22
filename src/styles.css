@@ -141,8 +141,9 @@ img:hover {
   color: var(--clr-accent-red);
 }
 
-.contents--hero > .content > .content-body--med > p {
-  font-size: 1.2rem;
+.contents--hero > .content > .content-body--med > p,
+.section-title {
+  font-size: 1.5em;
   font-weight: bold;
 }
 
@@ -274,6 +275,10 @@ img:hover {
   .content-title,
   .content-body--med {
     min-width: 300px;
+  }
+
+  .content-title > a {
+    text-decoration: underline;
   }
 
   .disks {
