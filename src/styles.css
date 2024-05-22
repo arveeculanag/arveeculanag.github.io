@@ -242,6 +242,11 @@ img:hover {
   width: 100%;
 }
 
+.content-social > a {
+  display: inline;
+  text-decoration: underline;
+}
+
 @media screen and (min-width: 820px) {
   .nav-items {
     padding: 0 0;
